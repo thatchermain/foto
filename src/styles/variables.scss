@@ -26,6 +26,8 @@
   --green_light: rgb(143, 199, 68);
   --white: rgb(255, 255, 255);
   --dark-bg: rgb(26, 28, 32);
+  --gradient-green: rgb(44, 179, 74);
+  --gradient-yellow: rgb(255, 203, 8);
   /* typo */
   --light: "light";
   --regular: "regular";
@@ -62,7 +64,7 @@
 .main_btn {
   cursor: pointer;
   background-color: var(--green);
-  width: 10rem;
+  // width: 10rem;
   color: var(--white);
   font-weight: 500;
   font-size: 1.1rem;

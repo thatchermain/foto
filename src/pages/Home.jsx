@@ -9,6 +9,14 @@ import Piece from "../assets/images/oferta/piece.png";
 import Ladowarki from "../assets/images/oferta/ladowarki.png";
 import Magazyny from "../assets/images/oferta/magazyny.png";
 import Sprzedaz from "../assets/images/oferta/sprzedaz.png";
+import Blogowy from "../assets/images/blogowy.png";
+import Blog1 from "../assets/images/blog1.png";
+import Blog2 from "../assets/images/blog2.png";
+import Blog3 from "../assets/images/blog3.png";
+import Blog4 from "../assets/images/blog4.png";
+import Blog5 from "../assets/images/blog5.png";
+import Blog6 from "../assets/images/blog6.png";
+import Blog7 from "../assets/images/blog7.png";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -252,7 +260,127 @@ const Home = () => {
             słoneczną i interesuję się tematyką odnawialnych źródeł energii.
           </div>
         </Row>
+        <Row>
+          <Col lg={6}>
+            <Link className="main-article">
+              <div className="main-article__img">
+                <img src={Blogowy} alt="" />
+              </div>
+              <div className="main-article__description p-5">
+                <h4 className="main-article-blog main-article-blog__title">
+                  Czym najtaniej ogrzać dom?
+                </h4>
+                <span className="main-article-blog main-article-blog__span py-2">
+                  Blog * 3 października 2022
+                </span>
+                <p className="main-article-blog main-article-blog__short-info">
+                  Czym najtaniej ogrzać dom? W ciągu ostatniego 1,5 roku ceny
+                  węgla poszły w górę aż o 229%, natomiast pelletu o 166% – to
+                  bardzo dużo. Dlatego też Polski Alarm Smogowy…
+                </p>
+              </div>
+            </Link>
+          </Col>
+          <Col lg={6}>
+            <div className="side-articles">
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog1} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Kryzys energetyczny a czas grzewczy!</p>
+                  <span>Blog * 22 września 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog2} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Falownik – ile lat bez usterek?</p>
+                  <span>Blog * 30 sierpnia 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog3} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>
+                    Ceny zmienne za prąd – rozliczenie przyszłości czy
+                    teraźniejszości?
+                  </p>
+                  <span>Blog * 16 sierpnia 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog4} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Zmniejszenie zużycia gazu w Europie o 15%?</p>
+                  <span>Blog * 8 sierpnia 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog5} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Google stawia na OZE!</p>
+                  <span>Blog * 22 lipca 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog6} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Elektromobilność – zwiększanie zasięgu!</p>
+                  <span>Blog * 12 lipca 2022</span>
+                </div>
+              </div>
+              <div className="side-article pb-3">
+                <div className="side-article__img">
+                  <img src={Blog7} alt="" />
+                </div>
+                <div className="side-article__info">
+                  <p>Podatki a zmiany w zasadach rozliczania prosumentów!</p>
+                  <span>Blog * 7 lipca 2022</span>
+                </div>
+              </div>
+            </div>
+          </Col>
+        </Row>
+        <Row className="py-5">
+          <button className="blog-btn main_btn my-5">
+            Odwiedź naszego bloga
+          </button>
+        </Row>
       </article>
+
+      {/* //////////////////Kontakt baner */}
+      <Row className="contact__wrapper container-fluid">
+        <Row className="contact_banner container">
+          <Col
+            lg={{ span: 1, offset: 1 }}
+            className="contact_banner__icon "
+          ></Col>
+          <Col lg={{ span: 5 }} className="contact_banner__text ps-5">
+            <div className="contact_banner__text-small">
+              SKONTAKTUJ SIĘ Z NAMI
+            </div>
+            <div className="contact_banner__text-big">
+              Nie czekaj! Otrzymaj darmową wycenę instalacji fotowoltaicznej.
+            </div>
+          </Col>
+          <Col lg={3} className=" d-flex ">
+            <button className="contact_banner__btn main_btn contact_btn">
+              Poproś o darmową wycenę
+            </button>
+          </Col>
+        </Row>
+      </Row>
     </div>
   );
 };
