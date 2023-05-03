@@ -1,0 +1,135 @@
+@import "variables.scss";
+
+.header {
+  position: relative;
+  margin-top: 100px;
+  background-image: url("../assets/images/header.jpg");
+  background-size: cover;
+  background-position: top center;
+  width: 100vw;
+  height: 110vh;
+  //   min-height: 100vh;
+}
+.form_wrapper {
+  position: relative;
+  top: 0;
+  right: 20vw;
+  padding-top: 6rem;
+  filter: drop-shadow(2px 2px 5px rgb(112, 110, 110));
+}
+
+.overlay {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  color: var(--white);
+  // visibility: hidden;
+  // display: none;
+}
+.image_wrapper {
+  max-width: 100%;
+  text-align: right;
+  & img {
+    max-width: 100%;
+    transition: all 0.3s;
+  }
+  &__offer {
+    transition: all 0.3s;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    &::after {
+    }
+
+    &:hover ::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      content: attr(data-text);
+      color: white;
+      font-size: 2rem;
+      font-family: Bold;
+      width: 100%;
+      height: 100%;
+      background-color: var(--green__less);
+    }
+    &:hover img {
+      transition: all 0.3s;
+      transform: scale(1.2);
+    }
+    &:hover .overlay {
+      display: block;
+    }
+  }
+}
+.article_dark-bg {
+  padding-bottom: 3rem;
+  position: relative;
+  background-color: var(--dark-bg);
+  color: var(--light_regular);
+}
+.steps {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 95%;
+    background-color: #fff;
+    top: -3%;
+    left: 50.35%;
+    @media screen and (max-width: 1399px) {
+      left: 51.7%;
+    }
+    @media screen and (max-width: 1199px) {
+      left: 53.5%;
+    }
+  }
+}
+.step_wrapper {
+  border-bottom: 2px solid var(--white);
+}
+.step_icon {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--green);
+  border: 3px solid var(--white);
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    top: 50%;
+    left: 100%;
+  }
+  &__arm {
+    transform: rotate(0deg);
+    &__left {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.step_title {
+  font-size: 30px;
+  color: var(--green);
+  font-weight: 300;
+}
+.step_info {
+  color: var(--light_bold);
+  font-weight: 300;
+}
