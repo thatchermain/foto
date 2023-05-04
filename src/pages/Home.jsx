@@ -18,8 +18,8 @@ import Blog5 from "../assets/images/blog5.png";
 import Blog6 from "../assets/images/blog6.png";
 import Blog7 from "../assets/images/blog7.png";
 import { Link } from "react-router-dom";
-import Slider from "../components/Slider/Slider";
-import SimpleSlider from "../components/Slider/Slider";
+import SimpleSlider from "../components/Slider/SimpleSlider";
+import opinions from "../data/opinions";
 
 const Home = () => {
   return (
@@ -402,7 +402,17 @@ const Home = () => {
           </div>
         </Row>
         <Row>
-          <Slider />
+          <SimpleSlider>
+            {opinions.map((item) => {
+              return (
+                <div className="opinion__wrapper">
+                  <div className="opinion__text">{item.text}</div>
+                  <div className="opinion__name">{item.name}</div>
+                  <div className="opinion__instalation">{item.instalation}</div>
+                </div>
+              );
+            })}
+          </SimpleSlider>
         </Row>
       </article>
     </div>
