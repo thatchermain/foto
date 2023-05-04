@@ -18,6 +18,8 @@ import Blog5 from "../assets/images/blog5.png";
 import Blog6 from "../assets/images/blog6.png";
 import Blog7 from "../assets/images/blog7.png";
 import { Link } from "react-router-dom";
+import Slider from "../components/Slider/Slider";
+import SimpleSlider from "../components/Slider/Slider";
 
 const Home = () => {
   return (
@@ -360,6 +362,7 @@ const Home = () => {
       </article>
 
       {/* //////////////////Kontakt baner */}
+
       <Row className="contact__wrapper container-fluid">
         <Row className="contact_banner container">
           <Col
@@ -381,6 +384,27 @@ const Home = () => {
           </Col>
         </Row>
       </Row>
+
+      {/*////////////////////// ARTICLE 5 */}
+
+      <article className="container">
+        <Row className=" text-center pt-5">
+          <div className="article_h4">OPINIE NASZYCH KLIENTÓW</div>
+          <div className="article_h2">
+            Poznaj referencje zadowolonych klientów
+          </div>
+
+          <div className="article_paragraph pb-5">
+            Opinie naszych zadowolonych klientów są naszą najlepszą wizytówką.
+            Możemy się poszczycić bardzo dobrymi ocenami a to jest bardzo
+            istotne przy wyborze instalatora elektrowni słonecznej. Zaufaj nam i
+            Ty, przekonasz się, ze to najlepszy wybór.
+          </div>
+        </Row>
+        <Row>
+          <Slider />
+        </Row>
+      </article>
     </div>
   );
 };

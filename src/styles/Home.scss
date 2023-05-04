@@ -229,10 +229,14 @@
   }
 }
 .contact_btn {
-  background-color: var(--white);
-  color: var(--green_light);
+  background-color: var(--white) !important;
+  color: var(--green_light) !important;
   width: 300px;
   @media screen and (max-width: 992px) {
     margin: 0 auto;
   }
+}
+.carousel-control-next {
+  background-color: black;
+  color: red;
 }
