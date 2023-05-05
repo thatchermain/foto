@@ -1,7 +1,7 @@
 /* Slider */
 
 .slick-slider {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   position: relative;
   display: block;
@@ -18,11 +18,11 @@
 }
 .slick-list {
   position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0 auto;
+  // overflow: hidden;
+  // display: block;
+  // margin: 0 auto;
   padding: 0;
-  width: 80%;
+  width: 90%;
 
   &:focus {
     // outline: none;
@@ -48,12 +48,13 @@
   top: 0;
   display: block;
   margin-left: auto;
+
   margin-right: auto;
 
   &:before,
   &:after {
     content: "";
-    display: table;
+    // display: table;
   }
 
   &:after {

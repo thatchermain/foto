@@ -236,3 +236,75 @@
     margin: 0 auto;
   }
 }
+.opinion {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 300;
+  }
+  &__text {
+    font-size: 20px;
+    color: var(--dark_regular_lighter);
+  }
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--dark_bold);
+  }
+
+  &__instalation {
+    font-weight: 600;
+  }
+}
+
+.dark-banner {
+  background-color: var(--dark-bg);
+  display: flex;
+  align-items: center;
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+  &__icon {
+    color: var(--green);
+    font-size: 60px;
+    display: flex;
+    padding: 0 1rem;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    &-title {
+      font-size: 20px;
+      color: var(--green);
+    }
+    &-text {
+      color: var(--light_regular);
+    }
+  }
+}
+.promo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  &__text {
+    color: var(--dark_regular);
+  }
+  &__link {
+    text-decoration: none;
+    color: var(--green_light);
+  }
+}
+.partner__wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.partner__logo {
+  max-width: 200px;
+  // margin: 0 5rem;
+}

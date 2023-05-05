@@ -19,7 +19,12 @@ import Blog6 from "../assets/images/blog6.png";
 import Blog7 from "../assets/images/blog7.png";
 import { Link } from "react-router-dom";
 import SimpleSlider from "../components/Slider/SimpleSlider";
+import LogoSlider from "../components/Slider/LogoSlider";
 import opinions from "../data/opinions";
+import { BsPerson } from "react-icons/bs";
+import { HiOutlineChatBubbleLeftEllipsis } from "react-icons/hi2";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import partners from "../data/partners";
 
 const Home = () => {
   return (
@@ -387,8 +392,8 @@ const Home = () => {
 
       {/*////////////////////// ARTICLE 5 */}
 
-      <article className="container">
-        <Row className=" text-center pt-5">
+      <article className="container py-5">
+        <Row className=" text-center py-5">
           <div className="article_h4">OPINIE NASZYCH KLIENTÓW</div>
           <div className="article_h2">
             Poznaj referencje zadowolonych klientów
@@ -401,18 +406,97 @@ const Home = () => {
             Ty, przekonasz się, ze to najlepszy wybór.
           </div>
         </Row>
-        <Row>
+        <Row className="pb-5">
           <SimpleSlider>
             {opinions.map((item) => {
               return (
-                <div className="opinion__wrapper">
-                  <div className="opinion__text">{item.text}</div>
-                  <div className="opinion__name">{item.name}</div>
-                  <div className="opinion__instalation">{item.instalation}</div>
+                <div className=" opinion opinion__wrapper">
+                  <p className="opinion__text">{item.text}</p>
+                  <p className="opinion__name">{item.name}</p>
+                  <p className="opinion__instalation">{item.instalation}</p>
                 </div>
               );
             })}
           </SimpleSlider>
+        </Row>
+      </article>
+
+      {/* //////////////////Dark baner */}
+      <div className="dark-banner pt-5 mt-5">
+        <Row className="container m-auto py-5">
+          <Col className="dark-banner__item">
+            <p className="dark-banner__icon">
+              <BsPerson />
+            </p>
+            <div className="dark-banner__info">
+              <div className="dark-banner__info-title">Doświadczony zespół</div>
+              <p className="dark-banner__info-text">
+                Wykwalifikowani handlowcy oraz monterzy sprostają każdemu
+                wyzwaniu.
+              </p>
+            </div>
+          </Col>
+          <Col className="dark-banner__item">
+            <div className="dark-banner__icon">
+              <HiOutlineChatBubbleLeftEllipsis />
+            </div>
+            <div className="dark-banner__info">
+              <p className="dark-banner__info-title">Profesjonalne doradztwo</p>
+              <p className="dark-banner__info-text">
+                Pomożemy Ci w podjęciu decyzji. Odpowiemy na wszystkie pytania.
+              </p>
+            </div>
+          </Col>
+          <Col className="dark-banner__item">
+            <div className="dark-banner__icon">
+              <AiOutlineClockCircle />
+            </div>
+            <div className="dark-banner__info">
+              <p className="dark-banner__info-title">
+                15 lat wsparcia technicznego
+              </p>
+              <p className="dark-banner__info-text">
+                Monitorujemy i naprawiamy występujące szkody.
+              </p>
+            </div>
+          </Col>
+        </Row>
+      </div>
+
+      {/* //////////////////Partnerzy */}
+
+      <article className="container-fluid py-5">
+        <Row className=" text-center py-5">
+          <div className="article_h4">NASI PARTNERZY</div>
+          <div className="article_h2">
+            Najlepsi partnerzy to klucz do sukcesu
+          </div>
+        </Row>
+        <div className="logo-slider m-auto pb-5">
+          <LogoSlider>
+            {partners.map((item) => {
+              return (
+                <Col className="partner__wrapper">
+                  <img src={item.src} alt="" className="partner__logo" />
+                </Col>
+              );
+            })}
+          </LogoSlider>
+        </div>
+        <Row className="promo container text-center py-5 mt-2 m-auto">
+          <p className="promo__text">
+            <span>
+              <Link className="promo__link">Regulamin</Link>
+            </span>{" "}
+            Akcji Promocyjnej „GROSIKOWE – AKCJA POLECAJĄCA”
+          </p>
+          <p className="promo__text">
+            <span>
+              <Link className="promo__link">Regulamin</Link>
+            </span>{" "}
+            Konkursu na Facebook – „Wygraj 10x piłkę z autografem Kamila
+            Grosickiego”
+          </p>
         </Row>
       </article>
     </div>

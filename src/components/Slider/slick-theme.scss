@@ -203,7 +203,7 @@ $slick-opacity-not-active: 1 !default;
       }
     }
     &.slick-active button:before {
-      //   transition: all 0.2s;
+      // transition: all 0.2s;
       content: $slick-dot-character-active;
       font-size: 20px;
       color: $slick-dot-color-active;
