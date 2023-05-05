@@ -10,8 +10,8 @@ import Forum from "../assets/images/footer/pfk.webp";
 const Footer = () => {
   return (
     <footer className="container-fluid pt-5 footer">
-      <Row className="container m-auto">
-        <Col className="footer-section">
+      <Row className="container m-auto ">
+        <Col className="footer-section" md={6} lg={4}>
           <h4 className="footer-section__heading">DANE FIRMOWE</h4>
           <ul className="footer-section__list">
             <li className="footer-section__item">
@@ -42,7 +42,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col className="footer-section">
+        <Col className="footer-section" md={6} lg={4}>
           <h4 className="footer-section__heading">DANE KONT BANKOWYCH</h4>
           <ul className="footer-section__list">
             <li className="footer-section__item">
@@ -72,7 +72,7 @@ const Footer = () => {
             </li>
           </ul>
         </Col>
-        <Col>
+        <Col md={6} lg={4}>
           <ul className="footer-section__list footer-section__list-right">
             <li className="footer-section__item">
               <span className="footer-section__key">

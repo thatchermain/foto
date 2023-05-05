@@ -38,13 +38,13 @@ const Home = () => {
       {/*////////////////////// ARTICLE 1 */}
 
       <article className="container pt-5">
-        <Row className="pt-5 gap-3">
-          <Col className="flex-end pt-5">
+        <Row className="pt-5   ">
+          <Col lg={6} md={12} className="flex-end pt-5 px-4">
             <div className="image_wrapper">
               <img src={Home1} alt="" />
             </div>
           </Col>
-          <Col className="pt-5">
+          <Col lg={6} md={12} className="pt-5 px-4">
             <h4 className="article_h4">CZYM SIĘ WYRÓŻNIAMY</h4>
             <h2 className="article_h2">Jesteśmy gotowi na każde wyzwanie.</h2>
 
@@ -88,7 +88,7 @@ const Home = () => {
             montażowe, pompy ciepła, kotły elektryczne oraz klimatyzatory.
           </div>
         </Row>
-        <Row xs={3} className=" py-5 gy-4 px-5 ">
+        <Row lg={3} md={2} xs={1} className=" py-5 gy-4 px-5 ">
           <Col className="">
             <div className="image_wrapper image_wrapper__offer">
               <Link>
@@ -161,91 +161,170 @@ const Home = () => {
             </div>
           </Row>
           <Row className="steps mt-5">
-            <Col lg={5} className="ms-0">
-              <div className="step_wrapper text-end">
-                <h3 className="step_title">DARMOWA KONSULTACJA</h3>
-                <p className="step_info">
-                  Wypełnij formularz kontaktowy lub zadzwoń. Ustalimy dogodny
-                  dla Ciebie termin spotkania z naszym ekspertem.
-                </p>
-              </div>
-            </Col>
+            <Row className="py-5">
+              <Col
+                className="mx-lg-5  ps-sm-5 "
+                lg={{ span: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper text-lg-end">
+                  <h3 className="step_title">DARMOWA KONSULTACJA</h3>
+                  <p className="step_info">
+                    Wypełnij formularz kontaktowy lub zadzwoń. Ustalimy dogodny
+                    dla Ciebie termin spotkania z naszym ekspertem.
+                  </p>
+                </div>
+              </Col>
 
-            <Col lg={6} className="ps-5 ms-5">
-              <div className="step_icon step_icon__arm step_icon__arm__left"></div>
-            </Col>
-            <Col lg={{ step: 1, offset: 5 }} className="ps-5">
-              <div className="step_icon ms-5 step_icon__arm step_icon__arm__right"></div>
-            </Col>
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, order: 2 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon step_icon__arm step_icon__arm__left"></div>
+              </Col>
+            </Row>
+            <Row className="py-5">
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, offset: 4 }}
+                xs={{ span: 0, order: 0 }}
+              ></Col>
+              <Col
+                className="ps-lg-0 ms-lg-5 "
+                lg={{ span: 1, offset: 5 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon ms-lg-5 step_icon__arm step_icon__arm__right"></div>
+              </Col>
 
-            <Col lg={5}>
-              <div className="step_wrapper">
-                <h3 className="step_title">BEZPŁATNY AUDYT</h3>
-                <p className="step_info">
-                  Nasz ekspert przyjedzie do Twojego domu, przeprowadzi
-                  bezpłatny audyt, dokona pomiarów dla przygotowania projektu
-                  instalacji i jej wyceny. Doradca z przyjemnością odpowie na
-                  wszystkie Twoje pytania i rozwieje wszelkie wątpliwości
-                </p>
-              </div>
-            </Col>
-            <Col lg={5} className="">
-              <div className="step_wrapper text-end">
-                <h3 className="step_title">UMOWA I FINANSOWANIE</h3>
-                <p className="step_info">
-                  Na kolejnym spotkaniu możesz już podpisać umowę. Pomożemy Ci w
-                  uzyskaniu kredytu z wszystkimi pozostałymi formalnościami, bez
-                  wychodzenia z domu. Załatwimy wszystko za Ciebie.
-                </p>
-              </div>
-            </Col>
-            <Col lg={6} className="ps-5 ms-5">
-              <div className="step_icon step_icon__arm step_icon__arm__left"></div>
-            </Col>
-            <Col lg={{ step: 1, offset: 5 }} className="ps-5">
-              <div className="step_icon ms-5"></div>
-            </Col>
-            <Col lg={5}>
-              <div className="step_wrapper">
-                <h3 className="step_title">MONTAŻ I URUCHOMIENIE</h3>
-                <p className="step_info">
-                  Nasi instalatorzy przeprowadzą montaż w 1-3 dni. Następnie
-                  złożymy w Twoim imieniu zgłoszenie instalacji fotowoltaicznej
-                  do Operatora Systemu Dystrybucji. Twoja instalacja zostanie
-                  również uzgodniona z rzeczoznawcą ppoż. W ciągu 30 dni licznik
-                  energii elektrycznej zostanie wymieniony na dwukierunkowy a Ty
-                  będziesz cieszyć się darmowym prądem ze słońca
-                </p>
-              </div>
-            </Col>
-            <Col lg={5} className="">
-              <div className="step_wrapper text-end">
-                <h3 className="step_title">DOFINANSOWANIE</h3>
-                <p className="step_info">
-                  Wskażemy Ci aktualne formy dofinansowania , z których możesz
-                  skorzystać. Pomożemy Ci wypełnić i złożyć wnioski o dotację
-                  np. rządowego programu Mój Prąd . Obecnie możesz również
-                  skorzystać z ulgi termomodernizacyjnej.
-                </p>
-              </div>
-            </Col>
-            <Col lg={6} className="ps-5 ms-5">
-              <div className="step_icon step_icon__arm step_icon__arm__left"></div>
-            </Col>
-            <Col lg={{ step: 1, offset: 5 }} className="ps-5">
-              <div className="step_icon ms-5"></div>
-            </Col>
-            <Col lg={5}>
-              <div className="step_wrapper ">
-                <h3 className="step_title">OPIEKA I GWARANCJA</h3>
-                <p className="step_info">
-                  Instalacja Fotowoltaiczna to inwestycja na lata. Przez cały
-                  ten czas Twoja instalacja będzie monitorowana a Tobie
-                  pozostanie wyłącznie cieszyć się z niższych rachunków za
-                  energię elektryczną.
-                </p>
-              </div>
-            </Col>
+              <Col
+                className="ms-0  ps-sm-5 "
+                lg={{ span: 5, offset: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper">
+                  <h3 className="step_title">BEZPŁATNY AUDYT</h3>
+                  <p className="step_info">
+                    Nasz ekspert przyjedzie do Twojego domu, przeprowadzi
+                    bezpłatny audyt, dokona pomiarów dla przygotowania projektu
+                    instalacji i jej wyceny. Doradca z przyjemnością odpowie na
+                    wszystkie Twoje pytania i rozwieje wszelkie wątpliwości
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="py-5">
+              <Col
+                className="mx-lg-5  ps-sm-5 "
+                lg={{ span: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper text-lg-end">
+                  <h3 className="step_title">UMOWA I FINANSOWANIE</h3>
+                  <p className="step_info">
+                    Na kolejnym spotkaniu możesz już podpisać umowę. Pomożemy Ci
+                    w uzyskaniu kredytu z wszystkimi pozostałymi formalnościami,
+                    bez wychodzenia z domu. Załatwimy wszystko za Ciebie.
+                  </p>
+                </div>
+              </Col>
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, order: 2 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon step_icon__arm step_icon__arm__left"></div>
+              </Col>
+            </Row>
+            <Row className="py-5">
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, offset: 4 }}
+                xs={{ span: 0, order: 0 }}
+              ></Col>
+              <Col
+                className="ps-lg-0 ms-lg-5 "
+                lg={{ span: 1, offset: 5 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon ms-lg-5 step_icon__arm step_icon__arm__right"></div>
+              </Col>
+
+              <Col
+                className="ms-0  ps-sm-5 "
+                lg={{ span: 5, offset: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper">
+                  <h3 className="step_title">MONTAŻ I URUCHOMIENIE</h3>
+                  <p className="step_info">
+                    Nasi instalatorzy przeprowadzą montaż w 1-3 dni. Następnie
+                    złożymy w Twoim imieniu zgłoszenie instalacji
+                    fotowoltaicznej do Operatora Systemu Dystrybucji. Twoja
+                    instalacja zostanie również uzgodniona z rzeczoznawcą ppoż.
+                    W ciągu 30 dni licznik energii elektrycznej zostanie
+                    wymieniony na dwukierunkowy a Ty będziesz cieszyć się
+                    darmowym prądem ze słońca
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <Row className="py-5">
+              <Col
+                className="mx-lg-5  ps-sm-5 "
+                lg={{ span: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper text-lg-end">
+                  <h3 className="step_title">DOFINANSOWANIE</h3>
+                  <p className="step_info">
+                    Wskażemy Ci aktualne formy dofinansowania , z których możesz
+                    skorzystać. Pomożemy Ci wypełnić i złożyć wnioski o dotację
+                    np. rządowego programu Mój Prąd . Obecnie możesz również
+                    skorzystać z ulgi termomodernizacyjnej.
+                  </p>
+                </div>
+              </Col>
+
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, order: 2 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon step_icon__arm step_icon__arm__left"></div>
+              </Col>
+            </Row>
+            <Row className="py-5">
+              <Col
+                className="ps-lg-0 ms-lg-0 "
+                lg={{ span: 5, offset: 4 }}
+                xs={{ span: 0, order: 0 }}
+              ></Col>
+              <Col
+                className="ps-lg-0 ms-lg-5 "
+                lg={{ span: 1, offset: 5 }}
+                xs={{ span: 2, order: 1 }}
+              >
+                <div className="step_icon ms-lg-5 step_icon__arm step_icon__arm__right"></div>
+              </Col>
+
+              <Col
+                className="ms-0  ps-sm-5 "
+                lg={{ span: 5, offset: 5, order: 1 }}
+                xs={{ span: 10, order: 2 }}
+              >
+                <div className="step_wrapper">
+                  <h3 className="step_title">OPIEKA I GWARANCJA</h3>
+                  <p className="step_info">
+                    Instalacja Fotowoltaiczna to inwestycja na lata. Przez cały
+                    ten czas Twoja instalacja będzie monitorowana a Tobie
+                    pozostanie wyłącznie cieszyć się z niższych rachunków za
+                    energię elektryczną.
+                  </p>
+                </div>
+              </Col>
+            </Row>
           </Row>
         </article>
       </section>
@@ -268,7 +347,7 @@ const Home = () => {
           </div>
         </Row>
         <Row>
-          <Col lg={6}>
+          <Col lg={6} className=" pb-5">
             <Link className="main-article">
               <div className="main-article__img">
                 <img src={Blogowy} alt="" />
@@ -472,7 +551,7 @@ const Home = () => {
             Najlepsi partnerzy to klucz do sukcesu
           </div>
         </Row>
-        <div className="logo-slider m-auto pb-5">
+        <div className="logo-slider m-auto pb-5 ">
           <LogoSlider>
             {partners.map((item) => {
               return (

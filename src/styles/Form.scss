@@ -3,7 +3,7 @@
   background-color: var(--white);
   //   height: 100%;
   max-width: 580px;
-  position: relative;
+  // position: relative;
   position: sticky;
 
   //   z-index: 10;
@@ -16,6 +16,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  @media screen and (max-width: 756px) {
+    max-width: 400px;
+  }
+  @media screen and (max-width: 500px) {
+    max-width: 300px;
+  }
   &__h4 {
     font-size: 22px;
     position: relative;
@@ -36,6 +42,7 @@
 .form_contact_type {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .form_field {
   text-align: center;
@@ -58,6 +65,9 @@
   display: flex;
   justify-content: space-between;
   gap: 2rem;
+  @media screen and (max-width: 756px) {
+    flex-direction: column;
+  }
 }
 .btn {
   cursor: pointer;

@@ -11,11 +11,19 @@
   //   min-height: 100vh;
 }
 .form_wrapper {
+  display: flex;
+  justify-content: end;
+  padding-right: 20rem;
   position: relative;
   top: 0;
-  right: 20vw;
+  // right: 20vw;
   padding-top: 6rem;
   filter: drop-shadow(2px 2px 5px rgb(112, 110, 110));
+  @media screen and (max-width: 1200px) {
+    justify-content: center;
+    padding-right: 0;
+    padding-top: 3rem;
+  }
 }
 
 .overlay {
@@ -87,12 +95,21 @@
     height: 95%;
     background-color: #fff;
     top: -3%;
-    left: 50.35%;
+    left: 49.55%;
     @media screen and (max-width: 1399px) {
-      left: 51.7%;
+      left: 50.9%;
     }
     @media screen and (max-width: 1199px) {
-      left: 53.5%;
+      left: 52.55%;
+    }
+    @media screen and (max-width: 992px) {
+      left: 4.5%;
+    }
+    @media screen and (max-width: 768px) {
+      left: 5.5%;
+    }
+    @media screen and (max-width: 576px) {
+      left: 4%;
     }
   }
 }
@@ -107,6 +124,10 @@
   background-color: var(--green);
   border: 3px solid var(--white);
   position: relative;
+  @media screen and (max-width: 576px) {
+    width: 20px;
+    height: 20px;
+  }
   &::after {
     position: absolute;
     content: "";
@@ -115,11 +136,18 @@
     background-color: #fff;
     top: 50%;
     left: 100%;
+    @media screen and (max-width: 576px) {
+      width: 20px;
+    }
   }
   &__arm {
     transform: rotate(0deg);
+
     &__left {
       transform: rotate(180deg);
+      @media screen and (max-width: 992px) {
+        transform: rotate(0deg);
+      }
     }
   }
 }
@@ -306,5 +334,6 @@
 }
 .partner__logo {
   max-width: 200px;
+  margin: 0 auto;
   // margin: 0 5rem;
 }
