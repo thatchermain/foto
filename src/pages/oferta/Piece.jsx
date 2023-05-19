@@ -1,8 +1,9 @@
 import React from "react";
-import { Row } from "react-bootstrap";
+import { Col, Row } from "react-bootstrap";
 import Piec1 from "../../assets/images/oferta/piec-banner.png";
 import Piec2 from "../../assets/images/oferta/piec-banner-grosik.png";
 import Logo from "../../assets/images/logo.png";
+import FormShort from "../../components/FormShort";
 
 const Piece = () => {
   return (
@@ -160,6 +161,9 @@ const Piece = () => {
         <p className="section__description">Zapraszamy do współpracy.</p>
         <h3 className="section__title-centered">Skontaktuj się z Nami</h3>
       </Row>
+      <Col className=" d-flex justify-content-center my-5 pb-5">
+        <FormShort />
+      </Col>
     </article>
   );
 };

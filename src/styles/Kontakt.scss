@@ -1,0 +1,27 @@
+@import url("./variables.scss");
+
+.kontakt {
+  &__wrapper {
+    margin-top: 200px;
+  }
+  &__info {
+    &-bold {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark_bold);
+    }
+    &-bold-small {
+      font-weight: 700;
+      color: var(--dark_regular);
+      margin: 0;
+    }
+    &-color {
+      font-size: 20px;
+      color: var(--green_light);
+    }
+    &-regular {
+      font-size: 20px;
+      color: var(--dark_regular);
+    }
+  }
+}

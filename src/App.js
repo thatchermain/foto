@@ -11,6 +11,10 @@ import Dystrybucja from "./pages/Dystrybucja.jsx";
 import Instalacje from "./pages/oferta/Instalacje.jsx";
 import Pompy from "./pages/oferta/Pompy.jsx";
 import Piece from "./pages/oferta/Piece.jsx";
+import Ladowarki from "./pages/oferta/Ladowarki.jsx";
+import Magazyny from "./pages/oferta/Magazyny.jsx";
+import Sprzedaz from "./pages/oferta/Sprzedaz.jsx";
+import Kontakt from "./pages/Kontakt.jsx";
 
 function App() {
   return (
@@ -26,7 +30,11 @@ function App() {
           />
           <Route path="/oferta/pompy-ciepla" element={<Pompy />} />
           <Route path="/oferta/piece-jonowe" element={<Piece />} />
+          <Route path="/oferta/ladowarki-samochodowe" element={<Ladowarki />} />
+          <Route path="/oferta/magazyny-energii" element={<Magazyny />} />
+          <Route path="/oferta/sprzedaz-energii" element={<Sprzedaz />} />
           <Route path="/dystrybucja" element={<Dystrybucja />} />
+          <Route path="/kontakt" element={<Kontakt />} />
         </Routes>
         <Footer />
         <ScrollToTop smooth color="#2cb34a" />

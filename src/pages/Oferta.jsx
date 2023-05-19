@@ -107,7 +107,7 @@ const Oferta = () => {
         </Col>
         <Col className="">
           <Link
-            to={"/oferta/spzedaz-energii"}
+            to={"/oferta/sprzedaz-energii"}
             className="image_wrapper image_wrapper__no-overlay"
           >
             <div>
