@@ -57,3 +57,43 @@
     }
   }
 }
+
+////////////////  DETAILS  ////////////////
+
+.section {
+  margin-top: 200px;
+  line-height: 1.8;
+
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--dark_bold);
+    // padding: 1rem 0;
+    margin-bottom: 1rem;
+    &-centered {
+      font-size: 28px;
+      font-weight: 700;
+      text-align: center;
+      padding: 1rem 0;
+    }
+  }
+  &__description {
+    color: var(--dark_regular_lighter);
+    &-bold {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--dark_bold);
+    }
+    &-link {
+      color: var(--green_light);
+      &:hover {
+        color: var(--green_light);
+        text-decoration: none;
+      }
+    }
+  }
+  &__img {
+    max-width: 320px;
+    padding: 1rem;
+  }
+}

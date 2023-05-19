@@ -19,7 +19,10 @@ const Oferta = () => {
       </Row>
       <Row lg={3} md={2} xs={1} className=" py-5 gy-4 px-5 ">
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/instalacje-fotowoltaiczne"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Instalacje} alt="" />
             </div>
@@ -35,7 +38,10 @@ const Oferta = () => {
           </Link>
         </Col>
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/pompy-ciepla"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Pompy} alt="" />
             </div>
@@ -49,7 +55,10 @@ const Oferta = () => {
           </Link>
         </Col>
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/piece-jonowe"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Piece} alt="" />
             </div>
@@ -63,7 +72,10 @@ const Oferta = () => {
           </Link>
         </Col>
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/ladowarki-samochodowe"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Ladowarki} alt="" />
             </div>
@@ -77,7 +89,10 @@ const Oferta = () => {
           </Link>
         </Col>
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/magazyny-energii"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Magazyny} alt="" />
             </div>
@@ -91,7 +106,10 @@ const Oferta = () => {
           </Link>
         </Col>
         <Col className="">
-          <Link className="image_wrapper image_wrapper__no-overlay">
+          <Link
+            to={"/oferta/spzedaz-energii"}
+            className="image_wrapper image_wrapper__no-overlay"
+          >
             <div>
               <img src={Sprzedaz} alt="" />
             </div>
