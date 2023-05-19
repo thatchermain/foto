@@ -10,6 +10,7 @@ import Oferta from "./pages/Oferta.jsx";
 import Dystrybucja from "./pages/Dystrybucja.jsx";
 import Instalacje from "./pages/oferta/Instalacje.jsx";
 import Pompy from "./pages/oferta/Pompy.jsx";
+import Piece from "./pages/oferta/Piece.jsx";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             element={<Instalacje />}
           />
           <Route path="/oferta/pompy-ciepla" element={<Pompy />} />
+          <Route path="/oferta/piece-jonowe" element={<Piece />} />
           <Route path="/dystrybucja" element={<Dystrybucja />} />
         </Routes>
         <Footer />

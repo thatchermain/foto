@@ -96,4 +96,11 @@
     max-width: 320px;
     padding: 1rem;
   }
+  &__list-noDecoration {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
