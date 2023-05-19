@@ -9,6 +9,7 @@ import ScrollToTop from "react-scroll-to-top";
 import Oferta from "./pages/Oferta.jsx";
 import Dystrybucja from "./pages/Dystrybucja.jsx";
 import Instalacje from "./pages/oferta/Instalacje.jsx";
+import Pompy from "./pages/oferta/Pompy.jsx";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             path="/oferta/instalacje-fotowoltaiczne"
             element={<Instalacje />}
           />
+          <Route path="/oferta/pompy-ciepla" element={<Pompy />} />
           <Route path="/dystrybucja" element={<Dystrybucja />} />
         </Routes>
         <Footer />
