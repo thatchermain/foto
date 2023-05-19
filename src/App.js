@@ -15,6 +15,10 @@ import Ladowarki from "./pages/oferta/Ladowarki.jsx";
 import Magazyny from "./pages/oferta/Magazyny.jsx";
 import Sprzedaz from "./pages/oferta/Sprzedaz.jsx";
 import Kontakt from "./pages/Kontakt.jsx";
+import Download from "./pages/Download.jsx";
+import Blog from "./pages/Blog.jsx";
+import Realizacje from "./pages/Realizacje.jsx";
+import Praca from "./pages/Praca.jsx";
 
 function App() {
   return (
@@ -34,6 +38,10 @@ function App() {
           <Route path="/oferta/magazyny-energii" element={<Magazyny />} />
           <Route path="/oferta/sprzedaz-energii" element={<Sprzedaz />} />
           <Route path="/dystrybucja" element={<Dystrybucja />} />
+          <Route path="/oferty_pracy" element={<Praca />} />
+          <Route path="/realizacje" element={<Realizacje />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/do_pobrania" element={<Download />} />
           <Route path="/kontakt" element={<Kontakt />} />
         </Routes>
         <Footer />

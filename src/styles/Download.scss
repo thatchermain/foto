@@ -1,0 +1,22 @@
+@import url("./variables.scss");
+
+.download {
+  &__wrapper {
+    margin-top: 200px;
+  }
+  &__title {
+    font-size: 34px;
+    font-weight: 700;
+    color: var(--dark_bold);
+    padding: 1rem 0;
+  }
+  &__link {
+    color: var(--green_light);
+    padding: 0.5rem 0;
+    text-decoration: none;
+    transform: scale(1);
+    &:hover {
+      color: var(--green);
+    }
+  }
+}
