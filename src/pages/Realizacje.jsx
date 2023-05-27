@@ -12,10 +12,10 @@ import GalleryModal from "../components/GalleryModal";
 const Realizacje = () => {
   return (
     <section className="realizacje__wrapper container">
-      <Row className="wrapper text-center">
+      <Row className="wrapper  d-flex justify-content-around ">
         {data.map((item) => {
           return (
-            <Col lg={4} key={item.id}>
+            <Col lg={3} md={5} key={item.id} className=" mx-lg-5">
               <GalleryModal
                 items={item.photos}
                 id={item.id}

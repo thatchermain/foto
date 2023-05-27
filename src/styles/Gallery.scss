@@ -4,22 +4,28 @@
   background-color: #fff;
   border: none;
   &:hover {
-    background-color: #fff;
+    background-color: #ffffff;
   }
   &__wrapper {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-width: 300px;
+    width: 100%;
+    gap: 1rem;
+
     // max-width: 400px;
     // aspect-ratio: 1/1;
     // border: 1px solid red;
   }
   &__img {
     overflow: hidden;
+    min-width: 350px;
     & img {
       transition: all 0.3s;
       transform: scale(1);
       width: 100%;
+      object-fit: cover;
       aspect-ratio: 1/1;
       &:hover {
         transform: scale(1.1);
