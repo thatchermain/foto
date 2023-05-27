@@ -1,0 +1,54 @@
+@import url("./variables.scss");
+
+.gallery {
+  background-color: #fff;
+  border: none;
+  &:hover {
+    background-color: #fff;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    // max-width: 400px;
+    // aspect-ratio: 1/1;
+    // border: 1px solid red;
+  }
+  &__img {
+    overflow: hidden;
+    & img {
+      transition: all 0.3s;
+      transform: scale(1);
+      width: 100%;
+      aspect-ratio: 1/1;
+      &:hover {
+        transform: scale(1.1);
+        transition: all 0.3s;
+      }
+    }
+  }
+  &__place {
+    font-size: 20px;
+    color: var(--dark_regular);
+    &:hover {
+      color: var(--green);
+    }
+  }
+  &__watch {
+    font-size: 13px;
+    color: var(--dark_bold);
+    font-weight: 700;
+    text-decoration: none;
+    &:hover {
+      color: var(--green);
+    }
+  }
+}
+.modal {
+  //   width: 100vw;
+  background-color: rgba(20, 19, 19, 0.7);
+}
+
+.slider {
+  width: 500px;
+}
